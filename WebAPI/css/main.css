@@ -1,0 +1,127 @@
+@import "https://fonts.googleapis.com/css?family=Dosis|Encode+Sans+Semi+Condensed|Poiret+One|Yanone+Kaffeesatz|Yellowtail|Montserrat|Oswald";
+html {
+  font-family: "Montserrat", sans-serif; }
+
+.img-responsive {
+  max-width: 100%; }
+
+.content-wrapper {
+  background: rgba(0, 0, 0, 0.04);
+  padding-bottom: 1.5rem;
+  padding-top: 0.5rem;
+  box-shadow: 0 9px 0px 0px rgba(0, 0, 0, 0), 0 -9px 0px 0px rgba(0, 0, 0, 0), 12px 0 15px -4px rgba(0, 0, 0, 0.05), -12px 0 15px -4px rgba(0, 0, 0, 0.05); }
+
+.circle {
+  border: solid 3px white;
+  border-radius: 50%; }
+
+.site-header {
+  background: url("/image/background-gradient.jpg");
+  background-size: 100%;
+  background-position-y: 22%;
+  border-bottom: grey solid 1px;
+  font-family: "Oswald", sans-serif;
+  color: #FFFDF6;
+  height: 200px; }
+  .site-header .title-text-wrapper {
+    border-left: white solid 0.3rem; }
+  .site-header .title-text {
+    margin-bottom: 0;
+    font-size: 4rem;
+    margin-top: 40px;
+    text-shadow: black 1px 1px; }
+  .site-header .title-sub-text {
+    margin-left: 0.5rem;
+    font-size: 1.3rem;
+    text-shadow: black 1px 1px; }
+  .site-header div.container.photo-credit {
+    position: relative;
+    top: 1.6rem;
+    color: white; }
+
+.site-header-home {
+  background: url("/image/background-gradient.jpg");
+  background-size: 100% 100%;
+  font-family: "Oswald", sans-serif;
+  color: #FFFDF6; }
+  .site-header-home .title-text-wrapper-home {
+    position: relative;
+    top: 30%;
+    border-left: white solid 0.3rem;
+    text-shadow: black 1px 1px; }
+    .site-header-home .title-text-wrapper-home h1 {
+      margin-bottom: 0;
+      font-size: 3rem; }
+    .site-header-home .title-text-wrapper-home h2 {
+      font-size: 2rem; }
+    .site-header-home .title-text-wrapper-home p {
+      font-size: 1.3rem; }
+    .site-header-home .title-text-wrapper-home a {
+      color: #FFFDF6;
+      font-size: 3rem;
+      text-align: center;
+      padding: 0.5rem;
+      margin-right: 0.5rem;
+      margin-bottom: 0.3rem; }
+      .site-header-home .title-text-wrapper-home a i {
+        width: 4.5rem; }
+      .site-header-home .title-text-wrapper-home a:hover {
+        border-width: 5px;
+        margin-right: 0.2rem; }
+
+nav {
+  padding-top: 0.3rem; }
+  nav .nav-link {
+    font-size: 1.1rem;
+    font-weight: 700;
+    color: white; }
+
+.blog-article-list .blog-post-small:hover {
+  background: rgba(0, 0, 0, 0.03); }
+.blog-article-list h1 {
+  font-size: 2.75rem;
+  font-weight: 700; }
+.blog-article-list .read-more {
+  margin-top: 1rem;
+  overflow: hidden; }
+
+.blog-portfolio-card {
+  padding-top: 1.5rem; }
+  .blog-portfolio-card a.btn.btn-dark {
+    position: absolute;
+    bottom: 1rem;
+    right: 1rem; }
+  .blog-portfolio-card .card-body {
+    margin-bottom: 4rem; }
+
+.portfolio-single-info .portfolio-single-categories-tags {
+  padding-bottom: 0.2rem; }
+
+.portfolio-single-content.jumbotron {
+  margin-top: 1.5rem;
+  background: white; }
+
+footer.page-footer {
+  background: #474753;
+  background-size: 100% 100%;
+  color: #FFFDF6;
+  box-shadow: 0px -5px -5px rgba(0, 0, 0, 0.75); }
+  footer.page-footer .row {
+    padding-top: 1rem; }
+  footer.page-footer .social-menu a {
+    color: #FFFDF6;
+    font-size: 2.2rem;
+    text-align: center;
+    padding: 0.5rem;
+    margin-right: 0.2rem; }
+    footer.page-footer .social-menu a i {
+      width: 3rem; }
+    footer.page-footer .social-menu a:hover {
+      border-width: 4px;
+      margin-right: 0.1rem; }
+  footer.page-footer .footer-menu li {
+    margin-top: 0.3rem; }
+    footer.page-footer .footer-menu li a {
+      color: #FFFDF6; }
+
+/*# sourceMappingURL=main.css.map */

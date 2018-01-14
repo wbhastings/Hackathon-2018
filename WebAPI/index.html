@@ -1,0 +1,50 @@
+<!--
+    Author: William Hastings
+    Event: University of Arizona - Arizona Hackathon 2018
+-->
+<!DOCTYPE html>
+<html lang="en-us">
+    <head>
+        <meta charset="utf-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE-edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+        <meta property="og:site_name" content="Arduino GPS/IOT Scavanger Hunt" />
+        <meta property="og:url" content="http://williamhastings.me/az-hackathon/2018/" />
+
+        <link rel="stylesheet" href="css/font-awesome.min.css" />
+        <link rel="stylesheet" href="css/main.css" />
+        <link rel="stylesheet" href="bootstrap.min.css" />
+
+    </head>
+
+    <body>
+        <div id="container">
+            <h1>Arduino GPS/IOT Scavanger Hunt</h1>
+            <div class="row">
+                <div class="col-sm-12 col-md-6 col-lg-6">
+                    <div class="scavanger-box-wrapper">
+                        <div class="location_wrapper_1">
+                            <label for="location_1">Location Hint:</label><br />
+                            <input style="width:100%" type="text" name="location_1" />
+                            <label for="location_1_lat">Decimal Latitude Position</label>
+                            <input style="width:100%" type="text" name="location_1_lat" />
+                            <label for="location_1_lat">Decimal Latitude Position</label>
+                            <input style="width:100%" type="text" name="location_1_lat" />
+                            <hr />
+                        </div>
+                        <button>Add another way point</button>
+                    </div>
+                </div>
+                <div class="col-sm-12 col-md-6 col-lg-6">
+                    <iframe width="100%" height="450" frameborder="0" style="border:0" src="https://www.google.com/maps/embed/v1/place?q=place_id:ChIJTZpd7qpx1oYRZs9AZMBoWIw&key=AIzaSyCQjEiJ8w0_SNq3jCdx8xzSfrPElhhK_0g" allowfullscreen></iframe>
+                </div>
+            </div>
+        </div>
+    </body>
+
+    <footer>
+        <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBmUFED8iz46ZHtYdhJoZ05WSzFvx3EqtU&libraries=geometry">
+        </script>
+    </footer>
+</html>

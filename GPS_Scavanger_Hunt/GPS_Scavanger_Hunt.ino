@@ -1,13 +1,14 @@
 #include <Adafruit_GPS.h>
 #include <math.h>
 #include <SPI.h>
+#include <WiFi.h>
 #include <Wire.h>
 #include <Adafruit_GFX.h>
 #include <Adafruit_SSD1306.h>
 
 // Set GPSECHO to 'false' to turn off echoing the GPS data to the Serial console
 // Set to 'true' if you want to debug and listen to the raw GPS sentences. 
-#define GPSECHO         true
+#define GPSECHO         false
 #define gpsSerial       Serial1
 
 
@@ -37,6 +38,10 @@ Adafruit_SSD1306 display(OLED_MOSI, OLED_CLK, OLED_DC, OLED_RESET, OLED_CS);
 // this keeps track of whether we're using the interrupt
 boolean usingInterrupt = false;
 void useInterrupt(boolean); // Func prototype keeps Arduino 0023 happy
+
+//char ssid[] = "William's iPhone";
+//char pass[] = "b5yi5913vuvjz";
+//int status = WL_IDLE_STATUS;
 
 void setup()  
 {
@@ -71,6 +76,7 @@ void setup()
   delay(2000);
   display.clearDisplay();
   // Display has been initialized
+  
 
 #ifdef __arm__
   usingInterrupt = false;  //NOTE - we don't want to use interrupts on the Due
@@ -81,6 +87,18 @@ void setup()
   delay(1000);
   // Ask for firmware version
   gpsSerial.println(PMTK_Q_RELEASE);
+
+  // Connect to WiFi
+//  Serial.println("Attempting to start WiFi-Connection");
+//  while(status != WL_CONNECTED) {
+//    Serial.println(status);
+//    Serial.println("...");
+//    status = WiFi.begin(ssid, pass);
+//    delay(10000);
+//    Serial.println(status);
+//  }
+//
+//  Serial.println(WiFi.localIP());
 }
 
 #ifdef __AVR__
